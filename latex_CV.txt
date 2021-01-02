@@ -1,0 +1,165 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{ForestGreen}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+
+\boldname{Surname}{Name}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{TRAN TRUNG TRUC}{
+    Website: \website{viblo.asia/u/tructt2} \\ 
+    GitHub: \github{trungtruc123} \\
+    Email: \email{tieuthu.anninh@gmail.com} \\
+    Phone: +84 369224293
+}
+\section{}
+Enthusiastic AI Engineer eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Clear understanding of Computer Vision and NLP and training in Data Scientist . Motivated to learn, grow and excel in company.
+% \headingphoto{Name Surname}{
+%     Website: \website{example.com} \\ 
+%     Email: \email{example@example.edu} \\
+%     LinkedIn: \linkedin{name-surname} \\
+%     GitHub: \github{example}
+% }{photo.jpg}
+% change subsection
+\titleformat{\subsection}
+  {\sffamily}
+  {}{0em}
+  {}
+
+\newcommand{\datedsection}[2]{%
+  \section[#1]{#1 \hfill #2}%
+}
+\newcommand{\datedsubsection}[2]{%
+  \subsection[#1]{#1 \hfill #2}%
+}
+
+\section{Experience}
+\subsection{\textbf{FPT Software}}
+\datedsubsection{Data Scientist}{09/2020--Current}
+\begin{itemize}
+    \item Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity.
+    \item Implement project Computer Vision, Nature Language Processing.
+    \item Generate data use GAN, Variational AutoEncoders ,.. 
+    \item Read, understand code AkaOCR to improve, update 
+    \item Get involved seminar reinforcement learning, optimizers, transformer for picture process.
+\end{itemize}
+\subsection{\textbf{FSERVING}}
+\datedsubsection{Intern AI Engineer}{03/2020--05/2020}
+\begin{itemize}
+    \item Implement virtual dressing room: remove background, detect pose, body measurements calculator
+    \item Study openCV, algorithm machine learning 
+    \item Approach Computer Vision
+\end{itemize}
+\subsection{\textbf{DAC Viet Nam}}
+\datedsubsection{Developer Python}{01/2020--03/2020}
+\begin{itemize}
+    \item Implement web by framework FLASK 
+    \item Familiar environment linux, install CUDA 
+    \item Build app by Flutter
+    \item  Implement web, app recognition skin diseases
+\end{itemize}
+
+\section{Education}
+\datedsubsection{DA Nang University}{2016--2020}
+\textit{Major: Information Technology}
+
+\pagebreak
+
+
+\section{Projects}
+\subsection{\textbf{Recognition error of battery}}
+Build model object detection recognition error ( foreign objects, bent, cracked, deformation ) of battery:
+\begin{itemize}
+\item Gather data use : GAN, augmentation
+\item Build model one-shot-learning
+\item Train model, test
+\item Visualize results
+\end{itemize}
+
+\subsection{\textbf{Application product reviews on Lazada, Tiki based on comments}}
+Use model BERT to sentiments analysis based on comments of customers:
+\begin{itemize}
+\item Crawl comment in Lazada, Tiki used BeautifulSoup, Selenium.
+\item Processing data use regular expression (regex).
+\item Train model , predict results use pretrain model BERT.
+\end{itemize}
+Github : \texttt{https://github.com/trungtruc123/Review\_Product\_Lazada}
+
+Blog :  \texttt{https://viblo.asia/p/su-dung-ai-danh-gia-san-pham-tren-lazadatiki-dua-tren-comment-aWj53b9ol6m}
+
+\begin{itemize}
+\end{itemize}
+\subsection{\textbf{Application web wrote poetry}}
+Use model GPT-2 to generator poetry (6-8) Viet Nam :
+\begin{itemize}
+\item Crawl data poetry ( Truyen Kieu, But Tre, thivien.net,...) from internet sources using Selenium
+\item Processing data use regex
+\item Tokenize data use pretrain model PhoBERT
+\item Fine-tuning model GPT-2
+\item Implement web demo by framework FLASK
+\end{itemize}
+Github :  \texttt{https://github.com/trungtruc123/Poemtry}
+
+Blog : \texttt{https://viblo.asia/p/su-dung-ai-tri-tue-nhan-tao-sang-tac-tho-luc-bat-YWOZrj3RZQ0}
+
+\subsection{\textbf{Application chatbot assistant covid-19 in facebook of hackathon contest
+}}
+Build chatbot assistant covid-19 support updating news on the number of infected people in the world, how to prevent and hotlines,...
+
+Github :  \texttt{https://github.com/trungtruc123/message\_bot\_fb}
+
+Youtube :  \texttt{https://www.youtube.com/watch?v=0guSjRHEMK4}
+\subsection{\textbf{Application web optical character recognition vietnamese (handwritten)}}
+Implement web recognition handwritten vietnamese address
+
+Github :  \texttt{https://github.com/trungtruc123/OCR\_FLASK}
+\subsection{\textbf{Marker detection of parking car}}
+Build model keypoint detection of parking car:
+\begin{itemize}
+\item Apply machine learning, albumentations generate 30k images
+\item Build DataLoader, custom model MSPN
+\item Train model, test
+\item Visualize results
+\end{itemize}
+\subsection{\textbf{Zalo object detection challenge contest}}
+Build model object detection : RestinaNet, EfficientDet for traffic signs : rank 56
+
+
+\section{Skills}
+\begin{itemize}
+\item \textbf{Vision }: Object detection, key-point detection, anomaly detection ...
+\item \textbf{NLP }: Sentiment Analysis , BERT, GPT-2, ...
+\item \textbf{Data Structure , Database }: MongoDB, MySQL
+\item \textbf{Language }: Python, C, C++, Java, JavaScript
+\item \textbf{Deployment}: Docker, API (Flask, Django)
+\item \textbf{Framework}: Pytorch, Tensorflow
+\end{itemize}
+
+\section{Scholarships And Awards}
+\datedsubsection{University scholarship for talented program students}{2017--2018}
+\datedsubsection{University scholarship for talented program students}{2018--2019}
+
+\section{Interests}
+\begin{itemize}
+    \item Write blog share knowledge , experience about AI.
+    \item Participate in discussion about new development in AI techniques 
+    \item Build desire projects
+\end{itemize}
+
+
+\end{document}
+
